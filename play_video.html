@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Video</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
     <nav class="d-flex align-items-center justify-content-between">
         <div class="nav-left d-flex align-items-center justify-content-between">
-            <img src="images/menu.png" class="menu-icon">
-            <img src="images/logo.png" class="logo">
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
         </div>
         <div class="nav-middle d-flex align-items-center justify-content-between">
             <div class="search-box d-flex align-items-center">
-                <input type="text" placeholder="Search...">
+                <input type="text" placeholder="Search..." id="search" name="search">
                 <img src="images/search.png">
             </div>
             <img src="images/voice-search.png" class="mic-icon">
@@ -24,7 +24,60 @@
             <img src="images/upload.png">
             <img src="images/more.png">
             <img src="images/notification.png">
-            <img src="images/Jack.png" class="user-icon">
+            <div>
+                <p class="d-inline-flex gap-1">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseExa" role="button" aria-expanded="false" aria-controls="collapseExa">
+                        <img src="images/user-profile-pic-high.webp" class="user-icon">
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExa">
+                    <div class="user-bar">
+                        <div>
+                            <img id="img1" src="images/user-profile-pic-high.webp" >
+                        </div>
+                        <div class="user-bar-inner" >
+                            <h4>Jack Jordon
+                                <br>
+                                <span>Youtuber And Designer</span>
+                            </h4>
+                            <div class="profile-popup-icons">
+                                <div class="profile-popup-divs" id="div1"><a href="profile-page.html"><i class="fa-solid fa-right-to-bracket"></i></a></i>
+                                <span class="tooltext">Login</span>
+                                </div>
+                                <div class="profile-popup-divs" id="div2"><a href="profile-page.html"><i class="fa-solid fa-lock"></i></a>
+                                    <span class="tooltext">Change Password</span></div>
+                                <div class="profile-popup-divs" id="div3"><a href="profile-page.html"><i class="fa-solid fa-pen-to-square"></i></a>
+                                    <span class="tooltext">Edit Profile</span></div>
+                                <div class="profile-popup-divs" id="div4"><a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+                                    <span class="tooltext">Logout</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="right-sidebar">
+                <p class="d-inline-flex gap-1 right-menu">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseEx" role="button" aria-expanded="false" aria-controls="collapseEx">
+                        <img src="images/heart-icon.png" class="right-menu" id="right-menu-btn">
+                    </a>
+                </p>
+                <div class="collapse" id="collapseEx">
+                    <ul id="list">
+                        <input id="searchbar" onkeyup="search_fav()" type="text" name="search" placeholder="Search">
+                        <li class="favs"><i class="fa-solid fa-star"></i>Walking in the Snow</li>
+                        <li class="favs"><i class="fa-solid fa-star"></i>Crown</li>
+                        <li class="favs"><i class="fa-solid fa-star"></i>Screamed The Thief</li>
+                        <li class="favs"><i class="fa-solid fa-star"></i>Angel Duster</li>
+                        <li class="favs"><i class="fa-solid fa-star"></i>One More Night</li>
+                        <li class="favs"><i class="fa-solid fa-star"></i>Dark House</li>
+                        <li class="favs"><i class="fa-solid fa-star"></i>Got Us Falling</li>
+                        <li class="favs"><i class="fa-solid fa-star"></i>Call Me Maybe</li>
+                        <li class="favs"><i class="fa-solid fa-star"></i>Fireball</li>
+                        <li class="favs"><i class="fa-solid fa-star"></i>Beautiful Life</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
     <div class="container1 play-container">
@@ -33,8 +86,247 @@
                 <video controls autoplay>
                     <source src="images/video.mp4" type="video/mp4">
                 </video>
+                <h3>FASTEST Way to Learn Web Development</h3>
+                <div class="small-container">
+                    <div class="user-play-video-outer">
+                        <div class="d-flex user-play-video">
+                            <img src="images/Jack.png">
+                            <div>
+                                <h5>Jack Suneja</h5>
+                                <p>381k subscribers</p>
+                            </div>
+                            <button class="join">Join</button>
+                            <button class="subscribe">Subscribe</button>
+                        </div>
+                        <div class="d-flex  like-unlike">
+                            <div class="d-flex first">
+                                <button class="like"><i class="fa-regular fa-thumbs-up"></i>2.8k</button>
+                                <button class="unlike"><i class="fa-regular fa-thumbs-down"></i></button>
+                            </div>
+                            <button class="share-download"><i class="fa-regular fa-share-from-square"></i>Share</button>
+                            <button class="share-download"><i class="fa-solid fa-download"></i>Download</button>
+                        </div>
+                    </div>
+                    <div class="rating-box-outer">
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="description">
+                    <h6>57,945 views Feb 16, 2024</h6>
+                    <a>Podcast Best Life Changing Podcast ft. IT Professionals</a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae nulla atque, dolore quaerat reiciendis eos accusamus suscipit. Explicabo fuga laudantium id modi, alias quos ea velit, quod commodi sed error.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates velit rerum veniam consequatur culpa vero, nobis quaerat iusto repellendus minima delectus, nulla quis saepe at quae excepturi fugiat animi?
+                    Placeat debitis numquam tenetur deleniti ratione doloribus quae necessitatibus tempora dignissimos nisi, velit quibusdam officiis nulla ad omnis consequatur ea harum obcaecati sunt voluptatibus? Quaerat facere voluptatem minus ipsam quisquam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum explicabo eligendi sint iure aliquid veritatis suscipit, optio sapiente, culpa, dignissimos dolorum. Minima aliquid earum laborum et saepe modi a quasi!
+                    Et quae voluptates mollitia esse rem, veniam, autem numquam unde in recusandae illo! Et veritatis quos vero laborum iusto fuga, expedita modi, qui quis assumenda magni dolores optio, voluptate necessitatibus?
+                    Rem eum facilis exercitationem velit, perspiciatis sequi? At quia corrupti quasi adipisci earum ea perferendis in aspernatur. Perferendis consectetur labore error ratione, magnam necessitatibus cum quibusdam, quod, nobis corrupti adipisci?
+                    Esse labore, nisi deleniti fugiat deserunt laudantium quam! Iure quos repellat illum incidunt soluta deserunt dolorum at ut itaque? Exercitationem quidem repellat animi recusandae quas, asperiores adipisci debitis temporibus perspiciatis.</p>
+                </div>
+                <div class="comment-section">
+                    <div class="d-flex gap-5 align-items-center mb-3">
+                        <h4>152 Comments</h4>
+                        <button class="d-flex gap-2 align-items-center sort-by"><i class="fa-solid fa-bars"></i>Sort by
+                        <div class="sort-hide">
+                            <ul>
+                                <li>Newest</li>
+                                <li>Oldest</li>
+                            </ul>
+                        </div></button>
+                    </div>
+                    <div class=" mb-3">
+                        <a class="subscribed d-inline-block"><img src="images/megan.png"></a>
+                        <input type="text" id="add-comment" placeholder="Add a comment">
+                    </div>
+                    <div class="d-flex comments-outer">
+                        <a><img src="images/gerard.png"></a>
+                        <div class="comments">
+                            <h6>@mihirnis2<span>3 weeks ago</span></h6>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat totam voluptates 
+                                quis fugit possimus natus dolores ea! Illum magnam eveniet quo ad debitis qui natus 
+                                iste nobis libero! Sequi, animi!
+                            </p>
+                            <div class="d-flex align-items-center gap-4">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                                <i class="fa-regular fa-thumbs-down"></i>
+                                <p class="reply">Reply</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex comments-outer">
+                        <a><img src="images/cameron.png"></a>
+                        <div class="comments">
+                            <h6>@jackspanis2<span>6 weeks ago</span></h6>
+                            <p>It amet consectetur adipisicing elit. Placeat totam voluptates 
+                                quis fugit possimus natus dolores ea! Illum magnam eveniet quo ad debitis qui natus 
+                                iste nobis libero! Sequi, animi!
+                            </p>
+                            <div class="d-flex align-items-center gap-4">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                                <i class="fa-regular fa-thumbs-down"></i>
+                                <p class="reply">Reply</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex comments-outer">
+                        <a><img src="images/Jack.png"></a>
+                        <div class="comments">
+                            <h6>@trishrnis2<span>5 weeks ago</span></h6>
+                            <p>Consectetur adipisicing elit. Placeat totam voluptates 
+                                quis fugit possimus natus dolores ea! Illum magnam eveniet quo ad debitis qui natus 
+                                iste nobis libero! Sequi, animi!
+                            </p>
+                            <div class="d-flex align-items-center gap-4">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                                <i class="fa-regular fa-thumbs-down"></i>
+                                <p class="reply">Reply</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex comments-outer">
+                        <a><img src="images/simon.png"></a>
+                        <div class="comments">
+                            <h6>@binasha124<span>8 weeks ago</span></h6>
+                            <p>Adipisicing elit. Placeat totam voluptates 
+                                quis fugit possimus natus dolores ea! Illum magnam eveniet quo ad debitis qui natus 
+                                iste nobis libero! Sequi, animi!
+                            </p>
+                            <div class="d-flex align-items-center gap-4">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                                <i class="fa-regular fa-thumbs-down"></i>
+                                <p class="reply">Reply</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex comments-outer">
+                        <a><img src="images/tom.png"></a>
+                        <div class="comments">
+                            <h6>@camiliahsg<span>9 weeks ago</span></h6>
+                            <p>Pisum dolor sit amet consectetur adipisicing elit. Velit harum placeat voluptas pariatur magni et nam porro, eligendi ex soluta expedita, numquam omnis quo voluptatum dolor explicabo saepe vel dolore!
+                            </p>
+                            <div class="d-flex align-items-center gap-4">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                                <i class="fa-regular fa-thumbs-down"></i>
+                                <p class="reply">Reply</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex comments-outer">
+                        <a><img src="images/user-profile-pic-high.webp"></a>
+                        <div class="comments">
+                            <h6>@elinadecoz<span>1 weeks ago</span></h6>
+                            <p>Orem ipsum dolor sit amet consectetur, adipisicing elit. Cumque consequatur provident accusantium fugiat consequuntur velit suscipit nobis, assumenda porro aliquid voluptatibus reprehenderit quisquam laudantium odio explicabo. Soluta voluptatibus veritatis voluptas.
+                            </p>
+                            <div class="d-flex align-items-center gap-4">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                                <i class="fa-regular fa-thumbs-down"></i>
+                                <p class="reply">Reply</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="right-sidebar">
+            <div class="right-side-list">
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail1.png"></a>
+                
+                    <div class="vid-info">
+                        <a href="">Best channel that help you with everything</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail5.png"></a>
+                
+                    <div class="vid-info">
+                        <a href="">Best channel that help you with everything</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail8.png"></a>
+                
+                    <div class="vid-info">
+                        <a href="">Best channel that help you with everything</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail7.png"></a>
+                
+                    <div class="vid-info">
+                        <a href="">Best channel that help you with everything</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail6.png"></a>
+                
+                    <div class="vid-info">
+                        <a href="">Best channel that help you with everything</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail5.png"></a>
+                
+                    <div class="vid-info">
+                        <a href="">Best channel that help you with everything</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail4.png"></a>
+                
+                    <div class="vid-info">
+                        <a href="">Best channel that help you with everything</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail3.png"></a>
+                
+                    <div class="vid-info">
+                        <a href="">Best channel that help you with everything</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail2.png"></a>
+                
+                    <div class="vid-info">
+                        <a href="">Best channel that help you with everything</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="" class="small-thumbnail"><img src="images/thumbnail1.png"></a>
+                
+                    <div class="vid-info">
+                        <a href="">Best channel that help you with everything</a>
+                        <p>Easy Tutorials</p>
+                        <p>15k Views</p>
+                    </div>
+                </div>
+
                 <div class="side-video-list">
                     <a href="" class="small-thumbnail"><img src="images/thumbnail1.png"></a>
                     <div class="vid-info">
@@ -103,5 +395,38 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // for star rating--------------------
+        const stars = document.querySelectorAll(".stars i");
+        stars.forEach((star,index1)=>{
+            star.addEventListener("click",()=>{
+                stars.forEach((star,index2)=>{
+                    if (index1 >= index2){
+                        star.classList.add("active");
+                    }
+                    else {
+                        star.classList.remove("active");
+                    }
+                })
+            })
+        })
+         
+        // close profile popup clicking outside target---------------
+        const profilePopup = document.getElementById("collapseExa");
+        function closePopup() { 
+            profilePopup.classList.remove("show"); 
+        }
+
+        function handlePopup(event) { 
+            if (!profilePopup.contains(event.target)) {
+                closePopup(); 
+        } } 
+
+        document.addEventListener("click", handlePopup);
+
+        document.getElementById("img1").addEventListener("click", () => {
+            profilePopup.classList.toggle("show"); 
+        });
+    </script>
 </body>
 </html>

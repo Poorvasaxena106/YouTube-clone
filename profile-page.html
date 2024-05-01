@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Page</title>
+</head>
+<body>
+    <div class="header">
+        <h3>JACK JORDEN</h3>
+        <p>Youtuber and Designer</p>
+    </div>
+    <div class="user-profile-pic">
+        <img class="user-img" src="images/user-profile-pic-high.webp" id="pic">
+        <div class="camera-img">
+            <input type="file" id="file">
+            <label for="file" onclick="profile_change()">
+                <img src="images/icons8-camera-30.png">
+            </label>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-mg-12 col-sm-12" id="work-design-outer">
+                <div class="row" >
+                    <div class="subscribed-list">
+                        <h5 class="subscribed-btn"><i class="fa-solid fa-address-book"></i>SUBSCRIBED</h5>
+                        <div class="subscribed-hidden">
+                            <a class="subscribed" href="#"><img src="images/Jack.png"><p>Jack Nicholson</p></a>
+                            <a class="subscribed" href="#"><img src="images/simon.png"><p>Simon Baker</p></a>
+                            <a class="subscribed" href="#"><img src="images/tom.png"><p>Tom Hardy</p></a>
+                            <a class="subscribed" href="#"><img src="images/megan.png"><p>Megan Ryan</p></a>
+                            <a class="subscribed" href="#"><img src="images/cameron.png"><p>Cameron Diazen</p></a>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="col-lg-9 col-mg-12 col-sm-12 container2">
+                <div class="row" id="back-btn-div">
+                    <a href="index.html"><button class="back-btn"><i class="fa-solid fa-arrow-left"></i></button></a>
+                </div>
+                <div class="row">
+                    <div class="d-flex justify-content-between">
+                        <h4>Jack Jordan</h4>
+                        <button class="d-flex align-items-center" id="edit-profile"><i class="fa-solid fa-pen-to-square"></i><p>Edit Profile</p></button>
+                    </div>
+                    <p class="blue">Youtuber and Designer</p>
+                </div>
+                <div class="row">
+                    <div class="d-flex" id="rating">
+                        <img src="images/yellow-star.png" alt="star">
+                        <img src="images/yellow-star.png" alt="star">
+                        <img src="images/yellow-star.png" alt="star">
+                        <img src="images/yellow-star.png" alt="star">
+                        <img src="images/yellow-star.png" alt="star">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-mg-6 col-sm-6">
+                        <button class="about-btn act"><i class="fa-regular fa-address-card"></i>About</button>
+                    </div>
+                    <div class="col-lg-3 col-mg-6 col-sm-6 timeline">
+                        <button class="timeline-btn"><i class="fa-solid fa-timeline"></i>Timeline</button>
+                    </div>
+                    <div class="col-lg-6 col-mg-12 col-sm12" id="subscriber-div">
+                        <button id="subscriber-btn"><i class="fa-solid fa-address-book"></i>Subscribers</button>
+                        <div class="subs">
+                            <ul class="subscriber-list">
+                                <input type="text" id="searchbar" onkeyup="search_fav()" name="search" placeholder="Search..">
+                                <li class="favs"><i class="fa-regular fa-address-book"></i>Jack Nicholson</li>
+                                <li class="favs"><i class="fa-regular fa-address-book"></i>Simon Baker</li>
+                                <li class="favs"><i class="fa-regular fa-address-book"></i>Tom Hardy</li>
+                                <li class="favs"><i class="fa-regular fa-address-book"></i>Tiara Kastle</li>
+                                <li class="favs"><i class="fa-regular fa-address-book"></i>Siana Serge</li>
+                                <li class="favs"><i class="fa-regular fa-address-book"></i>Mettegan Charles</li>
+                                <li class="favs"><i class="fa-regular fa-address-book"></i>Garry Fox</li>
+                                <li class="favs"><i class="fa-regular fa-address-book"></i>Diana George</li>
+                                <li class="favs"><i class="fa-regular fa-address-book"></i>Kristian Ferroz</li>
+                                <li class="favs"><i class="fa-regular fa-address-book"></i>Cameron Diazen</li>
+                                <li class="favs"><i class="fa-regular fa-address-book"></i>Megan yan</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="list-container timeline-container">
+                    <div class="vid-list">
+                        <div class="hover-class">
+                            <a href="play_video.html">
+                                <img src="images/thumbnail7.png" class="thumbnail">
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info">
+                                <a href="#">Best channel to learn everything you need</a>
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-list">
+                        <div class="hover-class">
+                            <a href="play_video.html">
+                                <img src="images/thumbnail1.png" class="thumbnail">
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info">
+                                <a href="#">Best channel to learn everything you need</a>
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-list">
+                        <div class="hover-class">
+                            <a href="play_video.html">
+                                <img src="images/thumbnail2.png" class="thumbnail">
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info">
+                                <a href="#">Best channel to learn everything you need</a>
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-list">
+                        <div class="hover-class">
+                            <a href="play_video.html">
+                                <img src="images/thumbnail3.png" class="thumbnail">
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info">
+                                <a href="#">Best channel to learn everything you need</a>
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-list">
+                        <div class="hover-class">
+                            <a href="play_video.html">
+                                <img src="images/thumbnail4.png" class="thumbnail">
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info">
+                                <a href="#">Best channel to learn everything you need</a>
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-list">
+                        <div class="hover-class">
+                            <a href="play_video.html">
+                                <img src="images/thumbnail5.png" class="thumbnail">
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info">
+                                <a href="#">Best channel to learn everything you need</a>
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-list">
+                        <div class="hover-class">
+                            <a href="play_video.html">
+                                <img src="images/thumbnail6.png" class="thumbnail">
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info">
+                                <a href="#">Best channel to learn everything you need</a>
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vid-list">
+                        <div class="hover-class">
+                            <a href="play_video.html">
+                                <img src="images/thumbnail8.png" class="thumbnail">
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info">
+                                <a href="#">Best channel to learn everything you need</a>
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row about-container">
+                    <div class="col-lg-4 col-mg-6 col-sm-6 about1 about">
+                        <p>User Id:</p>
+                        <p>Name:</p>
+                        <p>Email:</p>
+                        <p>Phone:</p>
+                    </div>
+                    <div class="col-lg-4 col-mg-6 col-sm-6 about2 about">
+                        <p class="blue">Jack123</p>
+                        <p class="blue">Jack Jordan</p>
+                        <p class="blue">jack@gmail.com</p>
+                        <p class="blue">8765432198</p>
+                    </div>
+                    <div class="col-lg-4 col-mg-12 col-sm-12 about" id="form">
+                        <h5>Feedback Form:</h5>
+                        <form>
+                            <label for="name">Name:</label>
+                            <br>
+                            <input type="text" id="name" name="nam" placeholder="Name">
+                            <br>
+                            <label for="email">Email:</label>
+                            <br>
+                            <input type="text" id="email" name="mail" placeholder=abc@email.co>
+                            <br>
+                            <label for="msg">Message:</label>
+                            <br>
+                            <input type="text" id="msg" placeholder="Here">
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Trending Videos</h3>
+        <div class="marquee marquee-profile-page">
+            <ul class="list">
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail2.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail1.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail3.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail4.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail5.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail6.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail7.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail8.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list">
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail2.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail1.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail3.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail4.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail5.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail6.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail7.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vid-list">
+                        <a href="play_video.html">
+                            <img src="images/thumbnail8.png" class="thumbnail">
+                        </a>
+                        <div class="d-flex marquee-content">
+                            <img src="images/user-profile-pic-high.webp">
+                            <div class="vid-info ">
+                                <p>Easy Tutorials</p>
+                                <p>15k Views &bull; 2 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        // subcriber button--------------------------------
+        var subscriberBtn = document.querySelector("#subscriber-btn");
+        var subs = document.querySelector(".subs");
+        function closesubsBtn() {
+            subs.classList.remove("subs-show");
+        }
+        function handleOutsideSubsButton(event){
+            if((!subscriberBtn.contains(event.target)) && (!subs.contains(event.target))){
+                closesubsBtn();
+            }
+        }
+        document.addEventListener("click",handleOutsideSubsButton);
+
+        subscriberBtn.addEventListener("click",() => {
+            subs.classList.toggle("subs-show");
+        });
+
+        // search fav---------------------------------------
+        function search_fav(){
+            let input = document.getElementById('searchbar').value.toLowerCase();
+            let x = document.getElementsByClassName('favs');
+            for (let i = 0; i < x.length; i++) {
+                if (x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "list-item";
+                } 
+                else {
+                    x[i].style.display = "none";
+                }
+            }
+        }
+
+        // to change profile pic----------------------------
+        function profile_change(){
+            var input = document.getElementById("file");
+            var pic = document.getElementById("pic");
+            input.onchange = function(){
+                pic.src = URL.createObjectURL(input.files[0]);
+            }  
+        }
+
+        // timeline-button-----------------------------------------
+        var timelineBtn = document.querySelector(".timeline-btn");
+        var aboutContainer = document.querySelector(".about-container");
+        var timelineContainer = document.querySelector(".timeline-container");
+        timelineBtn.onclick = function(){
+            timelineContainer.classList.toggle("timeline-container-show");
+            aboutContainer.classList.toggle("about-container-hide");
+            timelineBtn.classList.add("act");
+            aboutBtn.classList.remove("act");
+        }
+        // about-btn ------------------------------
+        var aboutBtn = document.querySelector(".about-btn");
+        aboutBtn.onclick = function(){
+            aboutContainer.classList.remove("about-container-hide");
+            aboutContainer.classList.toggle("about-container");
+            timelineContainer.classList.remove("timeline-container-show");
+            aboutBtn.classList.add("act");
+            timelineBtn.classList.remove("act");
+        }
+        // subscribed button for small screen-----
+        var subscribed = document.querySelector(".subscribed-btn");
+        var subscribedContent = document.querySelector(".subscribed-hidden");
+        subscribed.onclick = function(){
+            subscribedContent.classList.toggle("subscribed-show");
+        }
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
